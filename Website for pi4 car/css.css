@@ -87,9 +87,9 @@ color: #6666ff;
     cursor: pointer;
     transition: 0.5s;
     opacity: 1;
-    padding: 1.1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 1.1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 
