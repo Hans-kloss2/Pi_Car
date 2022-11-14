@@ -1,0 +1,73 @@
+#icon{
+    width: 2rem;
+    height: 5rem;
+    border-radius: 25px;
+}
+
+body{
+    text-align: center;
+    background-color: rgb(36, 29, 29);
+}
+h1{
+    font-size: 5rem;
+    font-style: bold;
+    cursor: pointer;
+}
+.rainbow:hover{
+    transition: 1s;
+    background-image: linear-gradient(to left, red, indigo, green, blue, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+}
+
+.rainbow {
+    transition: 1s;
+    background-image: linear-gradient(to left, rgb(214, 74, 153), indigo, green, rgb(255, 38, 0), orange, red);   -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.button{
+    color: black;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    box-shadow: none;
+    text-decoration: none;
+    border: none;
+    font-size: medium;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(4, 255, 75);
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 1;
+    padding: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#up{
+    position: relative;
+    left: 11.5rem;
+    top: 6.2rem;
+}
+
+#down{
+    position: relative;
+    left: 4.5rem;
+    top: 14rem;
+}
+
+
+#right{
+    position: relative;
+    left: -4rem;
+    top: 10rem;
+}
+#left{
+    position: relative;
+    right: 8rem;
+    top: 10rem;
+}
