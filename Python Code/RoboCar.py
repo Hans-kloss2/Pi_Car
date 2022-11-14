@@ -14,7 +14,7 @@ gpio.setup(12, gpio.OUT) #PWM1
 gpio.output(23, True)
 
 p = gpio.PWM(12, 230)
-p.start(5)
+p.start(0)
 
 time.sleep(5)
 
