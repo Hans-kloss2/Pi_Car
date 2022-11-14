@@ -16,6 +16,6 @@ gpio.output(24, True)
 p = gpio.PWM(12, 100)
 p.start(50)
 
-time.sleep(60)
+time.sleep(5)
 
 gpio.cleanup()
