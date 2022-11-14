@@ -1,7 +1,6 @@
 import RPi.GPIO as gpio
 
 import time
-gpio.cleanup()
 
 gpio.setmode(gpio.BCM)
 
@@ -13,7 +12,7 @@ gpio.setup(12, gpio.OUT) #PWM1
 gpio.output(24, True)
 
 p = gpio.PWM(12, 100)
-p.start(0)
+p.start(50)
 
 time.sleep(60)
 
