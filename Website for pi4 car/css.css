@@ -1,7 +1,5 @@
 #icon{
-    width: 2rem;
-    height: 5rem;
-    border-radius: 25px;
+    border-radius: 10vw;
 }
 
 
@@ -69,9 +67,9 @@ color: #6666ff;
 
 
 .button{
-    color: black;
+    color: rgb(29, 27, 27);
     text-align: center;
-    background-color: aquamarine;
+    background-color: #CC2455;
     border-radius: 0.2rem;
     padding: 1vw;
     box-shadow: none;
@@ -83,7 +81,8 @@ color: #6666ff;
 
 
 .button:hover{
-    background-color: rgb(4, 255, 75);
+    background-color: #ff003c;
+    color: aliceblue;
     cursor: pointer;
     transition: 0.5s;
     opacity: 1;
