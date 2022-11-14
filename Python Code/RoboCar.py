@@ -1,4 +1,4 @@
-import rpi.gpio as gpio
+import RPi.GPIO as gpio
 
 import time
 
