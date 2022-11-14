@@ -4,15 +4,20 @@
     border-radius: 25px;
 }
 
+
 body{
     text-align: center;
     background-color: rgb(36, 29, 29);
 }
+
+
 h1{
     font-size: 5rem;
     font-style: bold;
     cursor: pointer;
 }
+
+
 #shadowBox {
     position: relative;
     background-color: rgba(21, 19, 19, 0.347);
@@ -20,6 +25,7 @@ h1{
     padding: 0.5vw;
     top: 1vw;
 }
+
 
 .rainbow {
     text-align: center;
@@ -29,6 +35,7 @@ h1{
     letter-spacing: 5px;
     animation: colorRotate 5s linear 0s infinite;
 }
+
 
 @keyframes colorRotate {
 from {
@@ -57,6 +64,8 @@ color: #6666ff;
     font-size: medium;
     transition: 0.5s;
 }
+
+
 .button:hover{
     background-color: rgb(4, 255, 75);
     cursor: pointer;
@@ -67,11 +76,13 @@ color: #6666ff;
     padding-right: 2rem;
 }
 
+
 #up{
     position: fixed;
     left: 45vw;
     top: 20vw;
 }
+
 
 #down{
     position: fixed;
@@ -85,6 +96,8 @@ color: #6666ff;
     left: 51vw;
     top: 25vw;
 }
+
+
 #left{
     position: fixed;
     left: 38vw;
