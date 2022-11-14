@@ -6,12 +6,12 @@ import time
 
 gpio.setmode(gpio.BCM)
 
-gpio.setup(24, gpio.OUT) #DIR1
+gpio.setup(23, gpio.OUT) #DIR1
 
 gpio.setup(12, gpio.OUT) #PWM1
 
 
-gpio.output(24, True)
+gpio.output(23, True)
 
 p = gpio.PWM(12, 100)
 p.start(50)
