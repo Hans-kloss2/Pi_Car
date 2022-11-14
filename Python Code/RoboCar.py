@@ -4,7 +4,7 @@ import time
 
 
 
-gpio.setmode(gpio.BCM)
+gpio.setmode(gpio.BOARD)
 
 gpio.setup(23, gpio.OUT) #DIR1
 
