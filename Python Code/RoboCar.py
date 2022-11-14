@@ -13,8 +13,8 @@ gpio.setup(12, gpio.OUT) #PWM1
 
 gpio.output(23, True)
 
-p = gpio.PWM(12, 200)
-p.start(0)
+p = gpio.PWM(12, 250)
+p.start(2.5)
 
 time.sleep(5)
 
