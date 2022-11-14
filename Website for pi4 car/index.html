@@ -9,11 +9,41 @@
     <link rel="icon" href="img/pi_logo.jpg" type="image/icon type" id="icon">
 </head>
 <body>
+    <div id="shadowBox">
     <h1><a class="rainbow" target="_blank" href="https://www.raspberrypi.com/">Raspberry Pi Car control</a></h1>
+    </div>
 
-    <button class="button" id="up">Arrow Up</button>
-    <button class="button" id="down">Arrow Down</button>
-    <button class="button" id="left">Arrow Left</button>
-    <button class="button" id="right">Arrow Right</button>
+
+    <a href="#" id="up" class="button">UP</a>
+    <a href="#" id="down" class="button">DOWN</a>
+    <a href="#" id="left" class="button">LEFT</a>
+    <a href="#" id="right" class="button">RIGHT</a>
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#down").on("mousedown", function () {
+            $.get('/down_side');
+        }).on('mouseup', function () {
+            $.get('/stop');
+        });
+        $("#up").on("mousedown", function () {
+            $.get('/up_side');
+        }).on('mouseup', function () {
+            $.get('/stop');
+        });
+        $("#left").on("mousedown", function () {
+            $.get('/left_side');
+        }).on('mouseup', function () {
+            $.get('/stop');
+        });
+        $("#right").on("mousedown", function () {
+            $.get('/right_side');
+        }).on('mouseup', function () {
+            $.get('/stop');
+        });
+    });
+</script>
 </body>
 </html>

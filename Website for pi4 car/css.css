@@ -13,16 +13,35 @@ h1{
     font-style: bold;
     cursor: pointer;
 }
-.rainbow:hover{
-    transition: 1s;
-    background-image: linear-gradient(to left, red, indigo, green, blue, orange, red);   -webkit-background-clip: text;
-    color: transparent;
+#shadowBox {
+    position: relative;
+    background-color: rgba(21, 19, 19, 0.347);
+    border-radius: 50vw;
+    padding: 0.5vw;
+    top: 1vw;
 }
 
 .rainbow {
-    transition: 1s;
-    background-image: linear-gradient(to left, rgb(214, 74, 153), indigo, green, rgb(255, 38, 0), orange, red);   -webkit-background-clip: text;
-    color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-size: 5vw;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 5s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+from {
+color: #6666ff;
+} 10% {
+color: #0099ff;
+} 50% {
+color: #00ff00;
+} 75% {
+color: #ff3399;
+} 100% {
+color: #6666ff;
+}
 }
 
 
@@ -38,7 +57,7 @@ h1{
     font-size: medium;
     transition: 0.5s;
 }
-button:hover{
+.button:hover{
     background-color: rgb(4, 255, 75);
     cursor: pointer;
     transition: 0.5s;
@@ -49,25 +68,25 @@ button:hover{
 }
 
 #up{
-    position: relative;
-    left: 11.5rem;
-    top: 6.2rem;
+    position: fixed;
+    left: 45vw;
+    top: 20vw;
 }
 
 #down{
-    position: relative;
-    left: 4.5rem;
-    top: 14rem;
+    position: fixed;
+    left: 44vw;
+    top: 30vw;
 }
 
 
 #right{
-    position: relative;
-    left: -4rem;
-    top: 10rem;
+    position: fixed;
+    left: 51vw;
+    top: 25vw;
 }
 #left{
-    position: relative;
-    right: 8rem;
-    top: 10rem;
+    position: fixed;
+    left: 38vw;
+    top: 25vw;
 }
