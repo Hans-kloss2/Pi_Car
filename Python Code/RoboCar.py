@@ -5,7 +5,7 @@ gpio.setmode(gpio.BOARD)
 
 forward = True
 backward = False
-speed = 100
+speed = 240
 gpio.setwarnings(False)
 
 # Upper Left
