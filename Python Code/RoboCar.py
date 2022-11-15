@@ -61,6 +61,12 @@ def Forward():
     brf.start(50)
 
 
-Forward()
+#Forward()
+gpio.output(U_L_D, True)
+ulf = gpio.PWM(U_L, 240)
+ulf.start(50)
+
 time.sleep(2)
+
+
 gpio.cleanup()
