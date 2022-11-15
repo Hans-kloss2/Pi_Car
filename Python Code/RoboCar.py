@@ -57,9 +57,9 @@ def Forward():
     #blf.start(50)
 
     #Bottom Right Forward
-    gpio.output(B_R_D, forward)
     brf = gpio.PWM(B_R, speed)
     brf.start(50)
+    gpio.output(B_R_D, forward)
 
 
 Forward()
