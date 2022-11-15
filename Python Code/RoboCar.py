@@ -62,5 +62,27 @@ def UP():
     brf.start(80)
     time.sleep(2)
 
-UP()
+    def DOWN():
+    # Upper Left Forward
+    gpio.output(U_L_D, backward)
+    ulf = gpio.PWM(U_L, speed)
+    ulf.start(80)
+
+    # Upper Right Forward
+    gpio.output(U_R_D, forward)
+    urf = gpio.PWM(U_R, speed)
+    urf.start(80)
+
+    # Bottom Left Forward
+    gpio.output(B_L_D, forward)
+    blf = gpio.PWM(B_L, speed)
+    blf.start(80)
+
+    # Bottom Right Forward
+    gpio.output(B_R_D, forward)
+    brf = gpio.PWM(B_R, speed)
+    brf.start(80)
+    time.sleep(2)
+
+DOWN()
 gpio.cleanup()
