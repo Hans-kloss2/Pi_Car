@@ -134,19 +134,18 @@ def RIGHT():
 
 def index():
     return render_template('index.html')
-    if request.method == 'POST':
-        if request.form['submit_button'] == 'up':
-            UP()
-        elif request.form['submit_button'] == 'down':
-            DOWN()
-        elif request.form['submit_button'] == 'left':
-            LEFT()
-        elif request.form['submit_button'] == 'right':
-            RIGHT()
-        else:
-            pass
-    elif request.method == 'GET':
-        return render_template('index.html', form=form)
+if request.method == 'POST':
+    if request.form['submit_button'] == 'up':
+        UP()
+    elif request.form['submit_button'] == 'down':
+        DOWN()
+    elif request.form['submit_button'] == 'left':
+        LEFT()
+    elif request.form['submit_button'] == 'right':
+        RIGHT()
+    else:
+        pass
+
 
 
 print ("Start")
