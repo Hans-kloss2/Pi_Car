@@ -62,7 +62,7 @@ def UP():
     gpio.output(B_R_D, backward)
     brf = gpio.PWM(B_R, speed)
     brf.start(80)
-    time.sleep(2)
+    time.sleep(0.2)
 
 def DOWN():
     # Upper Left Forward
@@ -84,7 +84,7 @@ def DOWN():
     gpio.output(B_R_D, forward)
     brf = gpio.PWM(B_R, speed)
     brf.start(80)
-    time.sleep(2)
+    time.sleep(0.2)
 
 def LEFT():
     # Upper Left Forward
@@ -106,7 +106,7 @@ def LEFT():
     gpio.output(B_R_D, backward)
     brf = gpio.PWM(B_R, speed)
     brf.start(80)
-    time.sleep(2)
+    time.sleep(0.2)
 
 def RIGHT():
     # Upper Left Forward
@@ -128,7 +128,7 @@ def RIGHT():
     gpio.output(B_R_D, forward)
     brf = gpio.PWM(B_R, speed)
     brf.start(80)
-    time.sleep(2)
+    time.sleep(0.2)
 
 @app.route("/")
 
