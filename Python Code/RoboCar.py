@@ -36,6 +36,7 @@ B_R_D = 21 #DIR2
 
 gpio.setup(21, gpio.OUT) #DIR2
 gpio.setup(13, gpio.OUT) #PWM2
+time.sleep(0.1)
 
 
 #Creating the functions needed for easy steering of the Pi Car
