@@ -25,6 +25,7 @@ def UP():
     gpio.output(B_R_D, backward)
     brf = gpio.PWM(B_R, speed)
     brf.start(80)
+    time.sleep(2)
 
 
 gpio.setmode(gpio.BOARD)
@@ -73,7 +74,7 @@ UP()
 print("after valling Function")
 
 
-time.sleep(2)
+
 
 
 gpio.cleanup()
