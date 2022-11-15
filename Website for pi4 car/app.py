@@ -3,7 +3,7 @@ from flask import render_template, request
 import RPi.GPIO as gpio
 import time
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates', static_folder='static')
 gpio.setmode(gpio.BOARD)
 
 forward = True
