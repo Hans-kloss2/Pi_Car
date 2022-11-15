@@ -4,8 +4,6 @@ import RPi.GPIO as gpio
 import time
 
 app = Flask(__name__)
-print("Before Function")
-
 gpio.setmode(gpio.BOARD)
 
 forward = True
@@ -165,4 +163,5 @@ def down_side():
 print ("Start")
 
 app.run(host='0.0.0.0',port=5010)
+
 gpio.cleanup()
