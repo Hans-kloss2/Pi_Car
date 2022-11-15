@@ -130,7 +130,7 @@ def RIGHT():
     brf.start(80)
     time.sleep(0.2)
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def index():
     if request.method == 'POST':
         if request.form['submit_button'] == 'up':
