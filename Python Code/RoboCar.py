@@ -1,5 +1,9 @@
+from flask import Flask
+from flask import render_template, request
 import RPi.GPIO as gpio
 import time
+
+app = Flask(__name__)
 print("Before Function")
 
 gpio.setmode(gpio.BOARD)
@@ -129,5 +133,5 @@ def RIGHT():
     time.sleep(2)
 
 
-RIGHT()
+
 gpio.cleanup()
