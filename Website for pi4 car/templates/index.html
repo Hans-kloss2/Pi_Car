@@ -22,5 +22,38 @@
 </div>
 
 </form>
+
+<script>
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            alert('left');
+            method = method || "post";
+            document.myForm.Name.value == "left";
+            break;
+        case 38:
+            alert('up');
+            method = method || "post";
+            document.myForm.Name.value == "up";
+            break;
+        case 39:
+            alert('right');
+            method = method || "post";
+            document.myForm.Name.value == "right";
+            break;
+        case 40:
+            alert('down');
+            method = method || "post";
+            document.myForm.Name.value == "down";
+            break;
+        default:
+            method = method || "post";
+            document.myForm.Name.value == "stop";
+    }
+};
+
+
+</script>
 </body>
 </html>
