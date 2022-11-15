@@ -44,23 +44,23 @@ a=1
 
 def index():
 
-    return render_template('robot.html')
+   return render_template('index.html')
 
 @app.route('/left_side')
 
 def left_side():
 
-    data1="LEFT"
+   data1="LEFT"
 
-    GPIO.output(m11 , 0)
+   GPIO.output(m11 , 0)
 
-    GPIO.output(m12 , 0)
+   GPIO.output(m12 , 0)
 
-    GPIO.output(m21 , 1)
+   GPIO.output(m21 , 1)
 
-    GPIO.output(m22 , 0)
+   GPIO.output(m22 , 0)
 
-    return 'true'
+   return 'true'
 
 @app.route('/right_side')
 
