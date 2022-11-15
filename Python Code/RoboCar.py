@@ -46,19 +46,19 @@ def Forward():
     ulf.start(5)
 
     #Upper Right Forward
-    gpio.output(U_R_D, forward)
-    urf = gpio.PWM(U_R, speed)
-    urf.start(5)
+    #gpio.output(U_R_D, forward)
+    #urf = gpio.PWM(U_R, speed)
+    #urf.start(5)
     
     #Bottom Left Forward
-    gpio.output(B_L_D, forward)
-    blf = gpio.PWM(B_L, speed)
-    blf.start(5)
+    #gpio.output(B_L_D, forward)
+    #blf = gpio.PWM(B_L, speed)
+    #blf.start(5)
     
     #Bottom Right Forward
-    gpio.output(B_R_D, forward)
-    brf = gpio.PWM(B_R, speed)
-    brf.start(5)
+    #gpio.output(B_R_D, forward)
+    #brf = gpio.PWM(B_R, speed)
+    #brf.start(5)
 
 
 Forward()
