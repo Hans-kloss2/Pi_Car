@@ -135,7 +135,7 @@ def RIGHT():
 @app.route("/")
 
 def index():
-    return render_template('../Website for pi4 car/index.html')
+    return render_template('index.html')
 
 @app.route('/left_side')
 
