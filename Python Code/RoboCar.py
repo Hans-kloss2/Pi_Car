@@ -42,25 +42,28 @@ time.sleep(0.5)
 #Creating the functions needed for easy steering of the Pi Car
 def Forward():
     #Upper Left Forward
-    ulf = gpio.PWM(U_L, speed)
     gpio.output(U_L_D, forward)
+    ulf = gpio.PWM(U_L, speed)
     ulf.start(50)
     
 
     #Upper Right Forward
+    gpio.output(U_R_D, forward)
     urf = gpio.PWM(U_R, speed)
     urf.start(50)
-    gpio.output(U_R_D, backward)
+    
     
     #Bottom Left Forward
+    gpio.output(B_L_D, forward)
     blf = gpio.PWM(B_L, speed)
     blf.start(50)
-    gpio.output(B_L_D, forward)
+    
 
     #Bottom Right Forward
+    gpio.output(B_R_D, forward)
     brf = gpio.PWM(B_R, speed)
     brf.start(50)
-    gpio.output(B_R_D, forward)
+    
 
 
 Forward()
