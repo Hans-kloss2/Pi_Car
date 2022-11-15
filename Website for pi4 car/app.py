@@ -141,8 +141,7 @@ def index():
             LEFT()
         elif request.form['submit_button'] == 'right':
             RIGHT()
-    elif request.method == 'GET':
-        return render_template('index.html')
+    return render_template('index.html')
 
 
 
