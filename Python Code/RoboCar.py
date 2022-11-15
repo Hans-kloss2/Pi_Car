@@ -11,7 +11,7 @@ gpio.setwarnings(False)
 
 # Upper Left
 U_L = 12
-U_L_D = 24
+U_L_D = 23
 
 gpio.setup(24, gpio.OUT) #DIR1
 gpio.setup(12, gpio.OUT) #PWM1
