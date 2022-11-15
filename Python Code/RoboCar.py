@@ -91,12 +91,12 @@ def LEFT():
     ulf.start(80)
 
     # Upper Right Forward
-    gpio.output(U_R_D, forward)
+    gpio.output(U_R_D, backward)
     urf = gpio.PWM(U_R, speed)
     urf.start(80)
 
     # Bottom Left Forward
-    gpio.output(B_L_D, backward)
+    gpio.output(B_L_D, forward)
     blf = gpio.PWM(B_L, speed)
     blf.start(80)
 
