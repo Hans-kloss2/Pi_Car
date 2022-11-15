@@ -133,13 +133,13 @@ def RIGHT():
 @app.route("/")
 def index():
     return render_template('index.html')
-    if request.method == 'POST':
-        if request.form['submit_button'] == 'up':
-            UP()
-        elif request.form['submit_button'] == 'down':
-            DOWN()
-        else:
-            pass
+if request.method == 'POST':
+    if request.form['submit_button'] == 'up':
+        UP()
+    elif request.form['submit_button'] == 'down':
+        DOWN()
+    else:
+        pass
 
 
 
