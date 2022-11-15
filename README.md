@@ -1,2 +1,3 @@
 # Project_A
-Something about Project_A
+
+At Dania Academy in Viborg, we got task to build
