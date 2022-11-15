@@ -43,8 +43,9 @@ time.sleep(0.5)
 def Forward():
     #Upper Left Forward
     ulf = gpio.PWM(U_L, speed)
-    ulf.start(50)
     gpio.output(U_L_D, forward)
+    ulf.start(50)
+    
 
     #Upper Right Forward
     urf = gpio.PWM(U_R, speed)
