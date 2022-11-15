@@ -6,7 +6,5 @@ At Dania Academy in Viborg, we got the task to build an Remote Controlled Raspbe
 ## Website
 The website as already written is written in pure HTML and CSS.
 
-<video width="auto" height="auto" autoplay loop/>
-<source src="https://user-images.githubusercontent.com/51079728/201973099-726a3812-b655-4f70-8f2e-36f3c03b7a38.mp4" type="video/mp4">
-</video>
+Website.gif
 
