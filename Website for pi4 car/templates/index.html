@@ -15,10 +15,36 @@
 
 
 <div id="button_back" class="scaleDown ">
-    <a href="#up_side" id="up" class="button">UP</a>
-    <a href="#down_side" id="down" class="button">DOWN</a>
-    <a href="#left_side" id="left" class="button">LEFT</a>
-    <a href="#right_side" id="right" class="button">RIGHT</a>
+    <a href="#" id="up" class="button">UP</a>
+    <a href="#" id="down" class="button">DOWN</a>
+    <a href="#" id="left" class="button">LEFT</a>
+    <a href="#" id="right" class="button">RIGHT</a>
 </div>
+
+
+<script>
+    $( document ).ready(function(){
+        $("#down").on("mousedown", function() {
+        $.get('/down_side');
+        }).on('mouseup', function() {
+        $.get('/stop');
+        });
+        $("#up").on("mousedown", function() {
+        $.get('/up_side');
+        }).on('mouseup', function() {
+        $.get('/stop');
+        });
+        $("#left").on("mousedown", function() {
+        $.get('/left_side');
+        }).on('mouseup', function() {
+        $.get('/stop');
+        });
+        $("#right").on("mousedown", function() {
+        $.get('/right_side');
+        }).on('mouseup', function() {
+        $.get('/stop');
+        });
+    });
+    </script>
 </body>
 </html>
