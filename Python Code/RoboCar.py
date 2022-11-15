@@ -61,5 +61,5 @@ def Forward():
 
 
 Forward()
-time.sleep(5)
+time.sleep(2)
 gpio.cleanup()
