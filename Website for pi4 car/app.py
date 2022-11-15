@@ -133,16 +133,13 @@ def RIGHT():
 @app.route("/")
 
 def index():
-    return render_template('index.html')
-
-@app.route('/')
-def index():
-    if form.validate_on_submit():
-        if 'download' in request.form:
-            pass # do something
-        elif 'watch' in request.form:
-            pass # do something else
-
+    if request.method == 'POST':
+        if request.form['submit_button'] == 'up':
+            UP()
+        elif request.form['submit_button'] == 'down':
+            DOWN()
+        else:
+            pass
 
 
 
