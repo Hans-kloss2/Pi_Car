@@ -134,17 +134,16 @@ def RIGHT():
 
 def index():
     return render_template('index.html')
-if request.method == 'POST':
-    if request.form['submit_button'] == 'up':
-        UP()
-    elif request.form['submit_button'] == 'down':
-        DOWN()
-    elif request.form['submit_button'] == 'left':
-        LEFT()
-    elif request.form['submit_button'] == 'right':
-        RIGHT()
-    else:
-        pass
+
+@app.route('/')
+def index():
+    if form.validate_on_submit():
+        if 'download' in request.form:
+            pass # do something
+        elif 'watch' in request.form:
+            pass # do something else
+
+
 
 
 
