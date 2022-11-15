@@ -134,35 +134,20 @@ def RIGHT():
 
 def index():
     return render_template('index.html')
+    if request.method == 'POST':
+        if request.form['submit_button'] == 'up':
+            UP()
+        elif request.form['submit_button'] == 'down':
+            DOWN()
+        elif request.form['submit_button'] == 'left':
+            LEFT()
+        elif request.form['submit_button'] == 'right':
+            RIGHT()
+        else:
+            pass
+    elif request.method == 'GET':
+        return render_template('index.html', form=form)
 
-@app.route('/left_side')
-
-def left_side():
-    data1="LEFT"
-    LEFT()
-
-@app.route('/right_side')
-
-def right_side():
-    data1="RIGHT"
-    RIGHT()
-
-
-@app.route('/up_side')
-
-def up_side():
-    data1="FORWARD"
-    UP()
-
-@app.route('/down_side')
-
-def down_side():
-    data1="BACK"
-    DOWN()
-
-@app.route("/")
-def hello():
-    return "Hello World!"
 
 print ("Start")
 

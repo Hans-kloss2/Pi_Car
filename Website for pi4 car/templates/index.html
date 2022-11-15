@@ -13,38 +13,14 @@
     <h1><a class="rainbow" target="_blank" href="https://www.raspberrypi.com/">Raspberry Pi Car control</a></h1>
     </div>
 
-
+<form action="/" method="POST">
 <div id="button_back" class="scaleDown ">
-    <a href="#" id="up" class="button">UP</a>
-    <a href="#" id="down" class="button">DOWN</a>
-    <a href="#" id="left" class="button">LEFT</a>
-    <a href="#" id="right" class="button">RIGHT</a>
+    <input type="submit" name="submit_button" value="up" id="up" class="button">
+    <input type="submit" name="submit_button" value="down" id="down" class="button">
+    <input type="submit" name="submit_button" value="left" id="left" class="button">
+    <input type="submit" name="submit_button" value="right" id="right" class="button">
 </div>
 
-
-<script>
-    $( document ).ready(function(){
-        $("#").on("click", function() {
-        $.get('/down_side');
-        }).on('mouseup', function() {
-        $.get('/stop');
-        });
-        $("#up").on("mousedown", function() {
-        $.get('/up_side');
-        }).on('mouseup', function() {
-        $.get('/stop');
-        });
-        $("#left").on("mousedown", function() {
-        $.get('/left_side');
-        }).on('mouseup', function() {
-        $.get('/stop');
-        });
-        $("#right").on("mousedown", function() {
-        $.get('/right_side');
-        }).on('mouseup', function() {
-        $.get('/stop');
-        });
-    });
-    </script>
+</form>
 </body>
 </html>
