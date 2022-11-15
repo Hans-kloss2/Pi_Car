@@ -5,7 +5,7 @@ gpio.setmode(gpio.BOARD)
 
 forward = True
 backward = False
-
+gpio.setwarnings(False)
 
 # Upper Left
 U_L = 24
