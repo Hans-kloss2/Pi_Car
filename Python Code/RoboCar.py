@@ -1,7 +1,9 @@
 import RPi.GPIO as gpio
 import time
-
+print("Before Function")
 def UP():
+    print("in Function")
+
     #Upper Left Forward
     gpio.output(U_L_D, forward)
     ulf = gpio.PWM(U_L, speed)
@@ -62,8 +64,10 @@ time.sleep(0.5)
 #Creating the functions needed for easy steering of the Pi Car
 
 
+print("Before calluing Function")
 
 UP()
+print("after valling Function")
 
 
 
