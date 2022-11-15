@@ -137,8 +137,10 @@ def index():
             UP()
         elif request.form['submit_button'] == 'down':
             DOWN()
-        else:
-            pass
+        elif request.form['submit_button'] == 'left':
+            LEFT()
+        elif request.form['submit_button'] == 'right':
+            RIGHT()
     elif request.method == 'GET':
         return render_template('index.html')
 
