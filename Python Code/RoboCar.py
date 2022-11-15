@@ -2,27 +2,27 @@ import RPi.GPIO as gpio
 import time
 print("Before Function")
 def UP():
-    print("in Function")
+        print("in Function")
 
-    #Upper Left Forward
-    gpio.output(U_L_D, forward)
-    ulf = gpio.PWM(U_L, speed)
-    ulf.start(80)
+        #Upper Left Forward
+        gpio.output(U_L_D, forward)
+        ulf = gpio.PWM(U_L, speed)
+        ulf.start(80)
 
-    #Upper Right Forward
-    gpio.output(U_R_D, backward)
-    urf = gpio.PWM(U_R, speed)
-    urf.start(80)
-    
-    #Bottom Left Forward
-    gpio.output(B_L_D, backward)
-    blf = gpio.PWM(B_L, speed)
-    blf.start(80)
-    
-    #Bottom Right Forward
-    gpio.output(B_R_D, backward)
-    brf = gpio.PWM(B_R, speed)
-    brf.start(80)
+        #Upper Right Forward
+        gpio.output(U_R_D, backward)
+        urf = gpio.PWM(U_R, speed)
+        urf.start(80)
+        
+        #Bottom Left Forward
+        gpio.output(B_L_D, backward)
+        blf = gpio.PWM(B_L, speed)
+        blf.start(80)
+        
+        #Bottom Right Forward
+        gpio.output(B_R_D, backward)
+        brf = gpio.PWM(B_R, speed)
+        brf.start(80)
 
 gpio.setmode(gpio.BOARD)
 
