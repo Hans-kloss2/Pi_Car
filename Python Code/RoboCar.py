@@ -91,7 +91,7 @@ def LEFT():
     ulf.start(80)
 
     # Upper Right Forward
-    gpio.output(U_R_D, forward)
+    gpio.output(U_R_D, backward)
     urf = gpio.PWM(U_R, speed)
     urf.start(80)
 
