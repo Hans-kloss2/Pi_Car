@@ -10,8 +10,8 @@ speed = 100
 gpio.setwarnings(False)
 
 # Upper Left
-U_L = 24
-U_L_D = 12
+U_L = 12
+U_L_D = 24
 
 gpio.setup(24, gpio.OUT) #DIR1
 gpio.setup(12, gpio.OUT) #PWM1
