@@ -1,5 +1,6 @@
 import RPi.GPIO as gpio
 import time
+gpio.cleanup()
 
 gpio.setmode(gpio.BOARD)
 
