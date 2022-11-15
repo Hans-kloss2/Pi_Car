@@ -132,6 +132,37 @@ def RIGHT():
     brf.start(80)
     time.sleep(2)
 
+@app.route("/")
+
+def index():
+    return render_template('../Website for pi4 car/index.html')
+
+@app.route('/left_side')
+
+def left_side():
+    data1="LEFT"
+    LEFT()
+
+@app.route('/right_side')
+
+def right_side():
+    data1="RIGHT"
+    RIGHT()
 
 
+@app.route('/up_side')
+
+def up_side():
+    data1="FORWARD"
+    UP()
+
+@app.route('/down_side')
+
+def down_side():
+    data1="BACK"
+    DOWN()
+
+print ("Start")
+
+app.run(host='0.0.0.0',port=5010)
 gpio.cleanup()
