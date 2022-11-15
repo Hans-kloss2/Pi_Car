@@ -9,7 +9,7 @@ backward = False
 
 # Upper Left
 U_L = 24
-u_L_D = 12
+U_L_D = 12
 
 gpio.setup(24, gpio.OUT) #DIR1
 gpio.setup(12, gpio.OUT) #PWM1
@@ -40,7 +40,7 @@ time.sleep(0.5)
 #Creating the functions needed for easy steering of the Pi Car
 def forward():
     #Upper Left Forward
-    gpio.output(u_L_D, forward)
+    gpio.output(U_L_D, forward)
     ulf = gpio.PWM(U_L, 230)
     ulf.start(50)
 
