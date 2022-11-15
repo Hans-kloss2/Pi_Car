@@ -62,7 +62,7 @@ def UP():
     brf.start(80)
     time.sleep(2)
 
-    def DOWN():
+def DOWN():
     # Upper Left Forward
     gpio.output(U_L_D, backward)
     ulf = gpio.PWM(U_L, speed)
