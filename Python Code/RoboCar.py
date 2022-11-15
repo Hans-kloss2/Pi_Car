@@ -101,7 +101,7 @@ def LEFT():
     blf.start(80)
 
     # Bottom Right Forward
-    gpio.output(B_R_D, forward)
+    gpio.output(B_R_D, backward)
     brf = gpio.PWM(B_R, speed)
     brf.start(80)
     time.sleep(2)
