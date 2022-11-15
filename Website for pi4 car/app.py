@@ -160,6 +160,10 @@ def down_side():
     data1="BACK"
     DOWN()
 
+@app.route("/")
+def hello():
+    return "Hello World!"
+
 print ("Start")
 
 app.run(host='0.0.0.0',port=5010)
