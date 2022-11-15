@@ -5,6 +5,7 @@ gpio.setmode(gpio.BOARD)
 
 forward = True
 backward = False
+speed = 100
 gpio.setwarnings(False)
 
 # Upper Left
@@ -41,23 +42,23 @@ time.sleep(0.5)
 def Forward():
     #Upper Left Forward
     gpio.output(U_L_D, backward)
-    ulf = gpio.PWM(U_L, 230)
+    ulf = gpio.PWM(U_L, speed)
     ulf.start(50)
 
     #Upper Right Forward
-    gpio.output(U_R_D, backward)
-    urf = gpio.PWM(U_R, 230)
-    urf.start(50)
+    #gpio.output(U_R_D, backward)
+    #urf = gpio.PWM(U_R, speed)
+    #urf.start(50)
     
     #Bottom Left Forward
-    gpio.output(B_L_D, forward)
-    blf = gpio.PWM(B_L, 230)
-    blf.start(50)
+    #gpio.output(B_L_D, forward)
+    #blf = gpio.PWM(B_L, speed)
+    #blf.start(50)
 
     #Bottom Right Forward
-    gpio.output(B_R_D, forward)
-    brf = gpio.PWM(B_R, 230)
-    brf.start(50)
+    #gpio.output(B_R_D, forward)
+    #brf = gpio.PWM(B_R, speed)
+    #brf.start(50)
 
 
 Forward()
