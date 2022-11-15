@@ -131,9 +131,9 @@ def RIGHT():
     time.sleep(0.2)
 
 @app.route("/")
-
 def index():
-    if request.method == 'POST':
+    return render_template('index.html')
+if request.method == 'POST':
         if request.form['submit_button'] == 'up':
             UP()
         elif request.form['submit_button'] == 'down':
