@@ -146,6 +146,11 @@ def index():
 
 
 
+@app.route("/index.html", methods=["POST", "GET"])
+def index():
+    LEFT()
+    return render_template('left.html')
+
 
 
 print ("Start")
