@@ -175,7 +175,6 @@ def index():
             gpio.output(B_R_D, backward)
             brf = gpio.PWM(B_R, speed)
             brf.start(80)
-            time.sleep(1)
         elif request.form['submit_button'] == 'down':
             DOWN()
         elif request.form['submit_button'] == 'left':
@@ -193,6 +192,6 @@ def index():
 
 print ("Start")
 
-app.run(host='0.0.0.0',port=5010)
+app.run(debug=True, host='0.0.0.0',port=5010)
 
 gpio.cleanup()
