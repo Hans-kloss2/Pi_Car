@@ -146,23 +146,28 @@ def index():
 @app.route('/left.html')
 def left():
     LEFT()
+    return render_template('index.html')
 
 @app.route('/right.html')
 def right():
     RIGHT()
+    return render_template('index.html')
 
 @app.route('/up.html')
 def up():
     UP()
+    return render_template('index.html')
 
 @app.route('/down.html')
 def down():
     DOWN()
+    return render_template('index.html')
 
 
 @app.route('/space.html')
 def space():
     STOP()
+    return render_template('index.html')
 
 
 
