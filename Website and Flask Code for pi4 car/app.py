@@ -166,8 +166,5 @@ def index():
 
 
 
-if __name__ == "__main__":
-    print ("Start")
-    app.run(host='0.0.0.0',port=5010)
-
-gpio.cleanup()
+print ("Start")
+app.run(host='0.0.0.0',port=5010)
