@@ -156,7 +156,26 @@ def STOP():
 def index():
     if request.method == 'POST':
         if request.form['submit_button'] == 'up':
-            UP()
+            # Upper Left Forward
+            gpio.output(U_L_D, forward)
+            ulf = gpio.PWM(U_L, speed)
+            ulf.start(80)
+
+            # Upper Right Forward
+            gpio.output(U_R_D, backward)
+            urf = gpio.PWM(U_R, speed)
+            urf.start(80)
+
+            # Bottom Left Forward
+            gpio.output(B_L_D, backward)
+            blf = gpio.PWM(B_L, speed)
+            blf.start(80)
+
+            # Bottom Right Forward
+            gpio.output(B_R_D, backward)
+            brf = gpio.PWM(B_R, speed)
+            brf.start(80)
+            time.sleep(1)
         elif request.form['submit_button'] == 'down':
             DOWN()
         elif request.form['submit_button'] == 'left':
