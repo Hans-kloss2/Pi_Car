@@ -46,106 +46,87 @@ gpio.setup(13, gpio.OUT)  # PWM2
 def UP():
     # Upper Left Forward
     gpio.output(U_L_D, forward)
-    gpio.output(U_L, True)
+    gpio.output(U_L, forward)
 
     # Upper Right Forward
     gpio.output(U_R_D, backward)
-    urf = gpio.PWM(U_R, speed)
-    urf.start(80)
+    gpio.output(U_R, forward)
 
     # Bottom Left Forward
     gpio.output(B_L_D, backward)
-    blf = gpio.PWM(B_L, speed)
-    blf.start(80)
+    gpio.output(B_L, forward)
 
     # Bottom Right Forward
     gpio.output(B_R_D, backward)
-    brf = gpio.PWM(B_R, speed)
-    brf.start(80)
+    gpio.output(B_R, forward)
 
 def DOWN():
     # Upper Left Forward
     gpio.output(U_L_D, backward)
-    ulf = gpio.PWM(U_L, speed)
-    ulf.start(80)
+    gpio.output(U_L, forward)
 
     # Upper Right Forward
     gpio.output(U_R_D, forward)
-    urf = gpio.PWM(U_R, speed)
-    urf.start(80)
+    gpio.output(U_R, forward)
 
     # Bottom Left Forward
     gpio.output(B_L_D, forward)
-    blf = gpio.PWM(B_L, speed)
-    blf.start(80)
+    gpio.output(B_L, forward)
 
     # Bottom Right Forward
     gpio.output(B_R_D, forward)
-    brf = gpio.PWM(B_R, speed)
-    brf.start(80)
+    gpio.output(B_R, forward)
 
 def LEFT():
     # Upper Left Forward
     gpio.output(U_L_D, backward)
-    ulf = gpio.PWM(U_L, speed)
-    ulf.start(80)
+    gpio.output(U_L, forward)
 
     # Upper Right Forward
     gpio.output(U_R_D, backward)
-    urf = gpio.PWM(U_R, speed)
-    urf.start(80)
+    gpio.output(U_R, forward)
 
     # Bottom Left Forward
     gpio.output(B_L_D, forward)
-    blf = gpio.PWM(B_L, speed)
-    blf.start(80)
+    gpio.output(B_L, forward)
 
     # Bottom Right Forward
     gpio.output(B_R_D, backward)
-    brf = gpio.PWM(B_R, speed)
-    brf.start(80)
+    gpio.output(B_R, forward)
 
 def RIGHT():
     # Upper Left Forward
     gpio.output(U_L_D, forward)
-    ulf = gpio.PWM(U_L, speed)
-    ulf.start(80)
+    gpio.output(U_L, forward)
 
     # Upper Right Forward
     gpio.output(U_R_D, forward)
-    urf = gpio.PWM(U_R, speed)
-    urf.start(80)
+    gpio.output(U_R, forward)
 
     # Bottom Left Forward
     gpio.output(B_L_D, backward)
-    blf = gpio.PWM(B_L, speed)
-    blf.start(80)
+    gpio.output(B_L, forward)
 
     # Bottom Right Forward
     gpio.output(B_R_D, forward)
-    brf = gpio.PWM(B_R, speed)
-    brf.start(80)
+    gpio.output(B_R, forward)
 
 def STOP():
     # Upper Left Forward
     gpio.output(U_L_D, backward)
-    ulf = gpio.PWM(U_L, 0)
-    ulf.start(0)
+    gpio.output(U_L, backward)
 
     # Upper Right Forward
     gpio.output(U_R_D, backward)
-    urf = gpio.PWM(U_R, 0)
-    urf.start(0)
+    gpio.output(U_R, backward)
 
     # Bottom Left Forward
     gpio.output(B_L_D, backward)
-    blf = gpio.PWM(B_L, 0)
-    blf.start(0)
+    gpio.output(B_L, backward)
 
     # Bottom Right Forward
     gpio.output(B_R_D, backward)
-    brf = gpio.PWM(B_R, 0)
-    brf.start(0)
+    gpio.output(B_R, backward)
 
 
 @app.route("/", methods=["POST", "GET"])
@@ -169,3 +150,5 @@ def index():
 
 print ("Start")
 app.run(host='0.0.0.0',port=5010)
+
+gpio.cleanup()
