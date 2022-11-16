@@ -146,10 +146,9 @@ def STOP():
     brf = gpio.PWM(B_R, 0)
     brf.start(0)
 
-
-@app.route("/", methods=["POST", "GET"])
-def index():
-    while True:
+while True:
+    @app.route("/", methods=["POST", "GET"])
+    def index():
         if request.method == 'POST':
             if request.form['submit_button'] == 'up':
                 UP()
