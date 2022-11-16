@@ -72,6 +72,8 @@ color: #6666ff;
     background-color: #CC2455;
     border-radius: 0.2rem;
     padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     box-shadow: none;
     text-decoration: none;
     border: none;
@@ -86,7 +88,7 @@ color: #6666ff;
     cursor: pointer;
     transition: 0.5s;
     opacity: 1;
-    padding: 1.1vw;
+    padding: 1.2vw;
     padding-left: 2vw;
     padding-right: 2vw;
 }
@@ -94,8 +96,9 @@ color: #6666ff;
 
 #up{
     position: fixed;
-    left: 11vw;
+    left: 10vw;
     top: 1vw;
+    padding-right: 2.4vw;
 }
 
 
@@ -103,20 +106,28 @@ color: #6666ff;
     position: fixed;
     left: 10vw;
     top: 12vw;
+    padding-right: 1.6vw;
 }
 
 
 #right{
     position: fixed;
     left: 17vw;
-    top: 6vw;
+    top: 6.5vw;
 }
 
 
 #left{
     position: fixed;
     left: 3vw;
-    top: 6vw;
+    top: 6.5vw;
+}
+
+
+#stop{
+    position: fixed;
+    left: 10vw;
+    top: 6.5vw;
 }
 
 
