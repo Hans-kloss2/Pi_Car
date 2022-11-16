@@ -128,7 +128,6 @@ def STOP():
     gpio.output(B_R_D, backward)
     gpio.output(B_R, backward)
 
-
 @app.route("/", methods=["POST", "GET"])
 def index():
     if request.method == 'POST':
@@ -159,6 +158,7 @@ def up():
 @app.route('/down.html')
 def down():
     DOWN()
+
 
 @app.route('/space.html')
 def space():
