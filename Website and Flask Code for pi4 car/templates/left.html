@@ -25,34 +25,28 @@
 </form>
 
 <script>
+
 document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
-            alert("left");
-            document.location.href = "http://localhost:5010/left";
+            document.location.href = "left.html";
             break;
         case 38:
-            alert("up")
-            document.getElementById("up").submit();
-            document.myForm.Name.value == "up";
+            document.location.href = "up.html";
             break;
         case 39:
-            alert("right")
-            document.getElementById("right").submit();
-            document.myForm.Name.value == "right";
+            document.location.href = "right.html";
             break;
         case 40:
-            alert("down")
-            document.getElementById("down").submit();
-            document.myForm.Name.value == "down";
+            document.location.href = "down.html";
             break;
         case 32: // use if the auto stop does not work
-            alert("stop")
-            document.getElementById("stop").submit();
-            document.myForm.Name.value == "stop";
-            brak;
+            document.location.href = "space.html";
+            break;
     }
 };
+
 </script>
 </body>
+<footer><h3>Note: Use the Arrow keys for controling the car (the Space bar stops the Car)</h3></footer>
 </html>
