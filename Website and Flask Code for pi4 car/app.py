@@ -2,6 +2,8 @@ from flask import Flask
 from flask import render_template, request
 import RPi.GPIO as gpio
 import time
+gpio.cleanup()
+
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 gpio.setmode(gpio.BOARD)
