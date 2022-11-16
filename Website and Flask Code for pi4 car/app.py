@@ -130,6 +130,28 @@ def RIGHT():
     brf.start(80)
     time.sleep(0.2)
 
+def STOP():
+    # Upper Left Forward
+    gpio.output(U_L_D, backward)
+    ulf = gpio.PWM(U_L, 0)
+    ulf.start(0)
+
+    # Upper Right Forward
+    gpio.output(U_R_D, backward)
+    urf = gpio.PWM(U_R, 0)
+    urf.start(0)
+
+    # Bottom Left Forward
+    gpio.output(B_L_D, backward)
+    blf = gpio.PWM(B_L, 0)
+    blf.start(0)
+
+    # Bottom Right Forward
+    gpio.output(B_R_D, backward)
+    brf = gpio.PWM(B_R, 0)
+    brf.start(0)
+
+
 @app.route("/", methods=["POST", "GET"])
 def index():
     if request.method == 'POST':

@@ -21,3 +21,7 @@ Clone this Repository to the Pi OS and then run the "Website and Flask Code for 
 Both the Pi and the Client (Your PC or Smartphone) has to be on the same network. Then open the ip address of you pi with the port 5010
 
 The IP address of our Pi is 192.168.0.100:5010, yours may be different.
+
+## The Sketch
+
+For now the skecth is an work in progress...
