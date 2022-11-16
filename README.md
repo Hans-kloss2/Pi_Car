@@ -7,7 +7,7 @@ At Dania Academy in Viborg in our first semester, we got the task to build an Re
 The website is written in pure HTML and CSS. Later on there where added some lines of JS for sensoring the arrow keys of a keyboard input. This made the steering of the Car much easier.
 
 # Here you can see the Website in action
-[Website in action](https://user-images.githubusercontent.com/51079728/202233095-d1b5ca0f-2faa-41ab-8dbe-ed0bbab45a75.mp4)
+[Website in action](https://user-images.githubusercontent.com/51079728/202239718-347a315c-9481-4311-a69c-9da176ec0681.mp4)
 
 ## Requirements
 
