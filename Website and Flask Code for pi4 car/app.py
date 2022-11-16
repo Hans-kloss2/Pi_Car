@@ -144,6 +144,10 @@ def index():
             STOP()
     return render_template('index.html')
 
+@app.route('/left.html')
+
+def down_side():
+    LEFT()
 
 print ("Start")
 app.run(host='0.0.0.0',port=5010)
