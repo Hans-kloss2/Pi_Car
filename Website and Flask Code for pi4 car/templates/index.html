@@ -29,22 +29,27 @@ document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
             method = method || "post";
+            document.getElementById("left").submit();
             document.myForm.Name.value == "left";
             break;
         case 38:
             method = method || "post";
+            document.getElementById("up").submit();
             document.myForm.Name.value == "up";
             break;
         case 39:
             method = method || "post";
+            document.getElementById("right").submit();
             document.myForm.Name.value == "right";
             break;
         case 40:
             method = method || "post";
+            document.getElementById("down").submit();
             document.myForm.Name.value == "down";
             break;
         case 32: // use if the auto stop does not work
             method = method || "post";
+            document.getElementById("stop").submit();
             document.myForm.Name.value == "stop";
             brak;
     }
