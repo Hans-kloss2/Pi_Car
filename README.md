@@ -31,8 +31,5 @@ The Fritzinh gile can be found under "ProjectA/Project_A/Fritting Sketch".
 
 ![Buildup of the Project](https://user-images.githubusercontent.com/51079728/202236475-c35d9fb7-5456-4a1f-863c-c394a733beb4.jpg)
 
-See the video of the car in action
-
-![Car in action](https://user-images.githubusercontent.com/51079728/202236708-5b1ae824-918d-466c-a05b-9d027d51b474.mp4)
-
+### See the video of the car in action
 https://user-images.githubusercontent.com/51079728/202236708-5b1ae824-918d-466c-a05b-9d027d51b474.mp4
