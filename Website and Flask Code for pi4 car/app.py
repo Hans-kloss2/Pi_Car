@@ -152,14 +152,19 @@ def index():
     if request.method == 'POST':
         if request.form['submit_button'] == 'up':
             UP()
+            return 'true'
         elif request.form['submit_button'] == 'down':
             DOWN()
+            return 'true'
         elif request.form['submit_button'] == 'left':
             LEFT()
+            return 'true'
         elif request.form['submit_button'] == 'right':
             RIGHT()
+            return 'true'
         elif request.form['submit_button'] == 'stop':
             STOP()
+            return 'true'
     return render_template('index.html')
 
 
