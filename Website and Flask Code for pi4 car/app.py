@@ -146,7 +146,7 @@ def index():
 
 
 
-@app.route("/index.html", methods=["POST", "GET"])
+@app.route("/left.html", methods=["POST", "GET"])
 def index():
     LEFT()
     return render_template('left.html')
