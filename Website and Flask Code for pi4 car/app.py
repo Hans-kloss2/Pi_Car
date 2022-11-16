@@ -149,6 +149,28 @@ def index():
 def down_side():
     LEFT()
 
+@app.route('/right.html')
+
+def down_side():
+    RIGHT()
+
+@app.route('/up.html')
+
+def down_side():
+    UP()
+
+@app.route('/down.html')
+
+def down_side():
+    DOWN()
+
+@app.route('/space.html')
+
+def down_side():
+    STOP()
+
+
+
 print ("Start")
 app.run(host='0.0.0.0',port=5010)
 

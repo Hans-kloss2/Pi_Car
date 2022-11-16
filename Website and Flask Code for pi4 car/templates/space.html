@@ -25,27 +25,34 @@
 </form>
 
 <script>
-
 document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
-            document.location.href = "left.html";
+            alert("left");
+            document.location.href = "http://localhost:5010/left";
             break;
         case 38:
-            document.location.href = "up.html";
+            alert("up")
+            document.getElementById("up").submit();
+            document.myForm.Name.value == "up";
             break;
         case 39:
-            document.location.href = "right.html";
+            alert("right")
+            document.getElementById("right").submit();
+            document.myForm.Name.value == "right";
             break;
         case 40:
-            document.location.href = "down.html";
+            alert("down")
+            document.getElementById("down").submit();
+            document.myForm.Name.value == "down";
             break;
         case 32: // use if the auto stop does not work
-            document.location.href = "space.html";
-            break;
+            alert("stop")
+            document.getElementById("stop").submit();
+            document.myForm.Name.value == "stop";
+            brak;
     }
 };
-
 </script>
 </body>
 </html>
