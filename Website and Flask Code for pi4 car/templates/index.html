@@ -29,8 +29,7 @@ document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
             alert("left");
-            id_data = data_dic["id"];
-            return id_data;
+            return jsonify({'id': "left"});
             break;
         case 38:
             alert("up")
