@@ -30,7 +30,9 @@ document.onkeydown = function(e) {
         case 37:
             alert("left")
             var xhr = new XMLHttpRequest();
-            xhr.send("left");
+            xhr.send(JSON.stringify){
+                value: "left"
+            };
             break;
         case 38:
             alert("up")
