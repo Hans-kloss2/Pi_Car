@@ -23,9 +23,9 @@ Both the Pi and the Client (Your PC or Smartphone) has to be on the same network
 The IP address of our Pi is 192.168.0.100:5010, yours may be different.
 
 ## The Sketch
-![sketch](https://user-images.githubusercontent.com/51079728/202237153-ed5260bf-ad94-4137-9edc-cd23194dc6cd.png)
+The Fritzinh file can be found under "ProjectA/Project_A/Fritting Sketch".
 
-The Fritzinh gile can be found under "ProjectA/Project_A/Fritting Sketch".
+![sketch](https://user-images.githubusercontent.com/51079728/202237153-ed5260bf-ad94-4137-9edc-cd23194dc6cd.png)
 
 ## The Final Car
 
