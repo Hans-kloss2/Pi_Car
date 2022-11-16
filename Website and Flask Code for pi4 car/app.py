@@ -146,21 +146,21 @@ def STOP():
     brf = gpio.PWM(B_R, 0)
     brf.start(0)
 
-while True:
-    @app.route("/", methods=["POST", "GET"])
-    def index():
-        if request.method == 'POST':
-            if request.form['submit_button'] == 'up':
-                UP()
-            elif request.form['submit_button'] == 'down':
-                DOWN()
-            elif request.form['submit_button'] == 'left':
-                LEFT()
-            elif request.form['submit_button'] == 'right':
-                RIGHT()
-            elif request.form['submit_button'] == 'stop':
-                STOP()
-        return render_template('index.html')
+
+@app.route("/", methods=["POST", "GET"])
+def index():
+    if request.method == 'POST':
+        if request.form['submit_button'] == 'up':
+            UP()
+        elif request.form['submit_button'] == 'down':
+            DOWN()
+        elif request.form['submit_button'] == 'left':
+            LEFT()
+        elif request.form['submit_button'] == 'right':
+            RIGHT()
+        elif request.form['submit_button'] == 'stop':
+            STOP()
+    return render_template('index.html')
 
 
 
