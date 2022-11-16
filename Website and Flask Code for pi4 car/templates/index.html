@@ -29,8 +29,11 @@ document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
             alert("left")
-            document.getElementById("left").submit();
-            document.myForm.Name.value == "left";
+            $.ajax({
+                url: "/",
+                type: "post",
+                data: "left"
+            })
             break;
         case 38:
             alert("up")
