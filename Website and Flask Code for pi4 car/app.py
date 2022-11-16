@@ -46,8 +46,7 @@ gpio.setup(13, gpio.OUT)  # PWM2
 def UP():
     # Upper Left Forward
     gpio.output(U_L_D, forward)
-    ulf = gpio.PWM(U_L, speed)
-    ulf.start(80)
+    gpio.output(U_L, True)
 
     # Upper Right Forward
     gpio.output(U_R_D, backward)
