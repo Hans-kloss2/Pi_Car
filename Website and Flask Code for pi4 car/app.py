@@ -151,16 +151,6 @@ def STOP():
 @app.route("/", methods=["POST", "GET"])
 def index():
     if request.method == 'POST':
-        gpio.setup(23, gpio.OUT)  # DIR1
-        gpio.setup(32, gpio.OUT)  # PWM1
-        gpio.setup(26, gpio.OUT)  # DIR2
-        gpio.setup(33, gpio.OUT)  # PWM2
-        gpio.setup(24, gpio.OUT)  # DIR1
-        gpio.setup(15, gpio.OUT)  # PWM1
-        gpio.setup(21, gpio.OUT)  # DIR2
-        gpio.setup(13, gpio.OUT)  # PWM2
-
-
         if request.form['submit_button'] == 'up':
             UP()
         elif request.form['submit_button'] == 'down':
