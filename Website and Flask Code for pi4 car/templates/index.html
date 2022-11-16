@@ -29,10 +29,9 @@ document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
             alert("left")
-            var xhr = new XMLHttpRequest();
-            xhr.send(JSON.stringify({
-                value: left
-            }));
+            window.post = function(url, left) {
+            return fetch(url, {method: "POST", headers: {'value': 'left'}, body: JSON.stringify(left)});
+}
             break;
         case 38:
             alert("up")
