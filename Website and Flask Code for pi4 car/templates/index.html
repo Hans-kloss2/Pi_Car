@@ -29,8 +29,8 @@ document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
             alert("left")
-            const formData = new FormData("left");
-            return formData
+            var xhr = new XMLHttpRequest();
+            xhr.send("left");
             break;
         case 38:
             alert("up")
