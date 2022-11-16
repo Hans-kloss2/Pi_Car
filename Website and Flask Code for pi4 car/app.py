@@ -150,6 +150,7 @@ def STOP():
     gpio.output(B_R_D, backward)
     brf = gpio.PWM(B_R, 0)
     brf.start(0)
+    time.sleep(2)
 
 
 @app.route("/", methods=["POST", "GET"])
