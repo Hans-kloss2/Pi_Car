@@ -145,14 +145,6 @@ def index():
     return render_template('index.html')
 
 
-
-@app.route("/left.html", methods=["POST", "GET"])
-def index():
-    LEFT()
-    return render_template('left.html')
-
-
-
 print ("Start")
 app.run(host='0.0.0.0',port=5010)
 
