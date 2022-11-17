@@ -9,9 +9,11 @@
     <link rel="icon" href="img/pi_logo.jpg" type="image/icon type" class="icon">
 </head>
 <body>
+
     <div id="shadowBox">
     <h1><a class="rainbow" target="_blank" href="https://www.raspberrypi.com/">Raspberry Pi Car control</a></h1>
     </div>
+
 
 <form action='/' method="post">
 <div id="button_back" class="scaleDown ">
@@ -21,11 +23,10 @@
     <input type="submit" name="submit_button" value="right" id="right" class="button">
     <input type="submit" name="submit_button" value="stop" id="stop" class="button">
 </div>
-
 </form>
 
-<script>
 
+<script>
 document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
@@ -45,7 +46,6 @@ document.onkeydown = function(e) {
             break;
     }
 };
-
 </script>
 </body>
 <footer><h3>Note: Use the Arrow keys for controling the car (the Space bar stops the Car)</h3></footer>

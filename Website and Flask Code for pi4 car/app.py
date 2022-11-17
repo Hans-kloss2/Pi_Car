@@ -10,9 +10,10 @@ gpio.setmode(gpio.BOARD)
 
 forward = True
 backward = False
-speed = 250
 gpio.setwarnings(False)
 
+
+## Defining the Variables and setting the Pins to Output
 # Upper Left
 U_L = 32  # PWM1
 U_L_D = 23  # DIR1
@@ -42,6 +43,8 @@ gpio.setup(21, gpio.OUT)  # DIR2
 gpio.setup(13, gpio.OUT)  # PWM2
 
 
+
+
 # Creating the functions needed for easy steering of the Pi Car
 def UP():
     # Upper Left Forward
@@ -60,6 +63,7 @@ def UP():
     gpio.output(B_R_D, backward)
     gpio.output(B_R, forward)
 
+
 def DOWN():
     # Upper Left Forward
     gpio.output(U_L_D, backward)
@@ -76,6 +80,7 @@ def DOWN():
     # Bottom Right Forward
     gpio.output(B_R_D, forward)
     gpio.output(B_R, forward)
+
 
 def LEFT():
     # Upper Left Forward
@@ -94,6 +99,7 @@ def LEFT():
     gpio.output(B_R_D, backward)
     gpio.output(B_R, forward)
 
+
 def RIGHT():
     # Upper Left Forward
     gpio.output(U_L_D, forward)
@@ -110,6 +116,7 @@ def RIGHT():
     # Bottom Right Forward
     gpio.output(B_R_D, forward)
     gpio.output(B_R, forward)
+
 
 def STOP():
     # Upper Left Forward
@@ -128,6 +135,11 @@ def STOP():
     gpio.output(B_R_D, backward)
     gpio.output(B_R, backward)
 
+
+
+
+
+# Flask implementation for recognizing the control of the Web interface
 @app.route("/", methods=["POST", "GET"])
 def index():
     if request.method == 'POST':
@@ -143,20 +155,24 @@ def index():
             STOP()
     return render_template('index.html')
 
+
 @app.route('/left.html')
 def left():
     LEFT()
     return render_template('index.html')
+
 
 @app.route('/right.html')
 def right():
     RIGHT()
     return render_template('index.html')
 
+
 @app.route('/up.html')
 def up():
     UP()
     return render_template('index.html')
+
 
 @app.route('/down.html')
 def down():
@@ -170,7 +186,7 @@ def space():
     return render_template('index.html')
 
 
-
+# Starting the webserver
 print ("Start")
 app.run(host='0.0.0.0',port=5010)
 
