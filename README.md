@@ -27,7 +27,7 @@ The Fritzinh file can be found under "ProjectA/Project_A/Fritting Sketch".
 
 ![sketch](https://user-images.githubusercontent.com/51079728/202237153-ed5260bf-ad94-4137-9edc-cd23194dc6cd.png)
 
-## The Final Car
+## The wiring of the car
 
 ![Buildup of the Project](https://user-images.githubusercontent.com/51079728/202236475-c35d9fb7-5456-4a1f-863c-c394a733beb4.jpg)
 
