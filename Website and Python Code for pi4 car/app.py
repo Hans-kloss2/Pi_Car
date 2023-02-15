@@ -135,6 +135,41 @@ def STOP():
     gpio.output(B_R_D, backward)
     gpio.output(B_R, backward)
 
+# Driving left without rotating, hoepfully
+def STILLLEFT():
+    gpio.output(U_L_D, forward)
+    gpio.output(U_L, forward)
+
+    # Upper Right Forward
+    gpio.output(U_R_D, backward)
+    gpio.output(U_R, forward)
+
+    # Bottom Left Forward
+    gpio.output(B_L_D, backward)
+    gpio.output(B_L, forward)
+
+    # Bottom Right Forward
+    gpio.output(B_R_D, forward)
+    gpio.output(B_R, forward)
+
+
+# Driving right without rotating, hoepfully
+def STILLRIGHT():
+    gpio.output(U_L_D, backward)
+    gpio.output(U_L, forward)
+
+    # Upper Right Forward
+    gpio.output(U_R_D, forward)
+    gpio.output(U_R, forward)
+
+    # Bottom Left Forward
+    gpio.output(B_L_D, forward)
+    gpio.output(B_L, forward)
+
+    # Bottom Right Forward
+    gpio.output(B_R_D, backward)
+    gpio.output(B_R, forward)
+
 
 
 
@@ -153,9 +188,15 @@ def index():
             RIGHT()
         elif request.form['submit_button'] == 'stop':
             STOP()
+        elif request.form['submit_button'] == '<<':
+            STILLLEFT()
+        elif request.form['submit_button'] == '>>':
+            STILLRIGHT()
     return render_template('index.html')
 
 
+
+##############################################################
 @app.route('/left.html')
 def left():
     LEFT()
@@ -185,6 +226,17 @@ def space():
     STOP()
     return render_template('index.html')
 
+
+@app.route('/stillleft.html')
+def stillleft():
+    STILLLEFT()
+    return render_template('index.html')
+
+
+@app.route('/stillright.html')
+def stillright():
+    STILLRIGHT()
+    return render_template('index.html')
 
 # Starting the webserver
 print ("Start")
