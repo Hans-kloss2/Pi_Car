@@ -136,28 +136,6 @@ color: #6666ff;
     top: 6.5vw;
 }
 
-#stillleft{
-    position: fixed;
-    left: 2.4vw;
-    top: 6.5vw;
-}
-
-#stillright{
-    position: fixed;
-    left: 27.8vw;
-    top: 6.5vw;
-}
-
-#stillright:hover{
-    color: #fff;
-    background-color: #0099ff;
-}
-
-#stillleft:hover{
-    color: #fff;
-    background-color: #0099ff;
-}
-
 
 .scaleDown {
     -webkit-transform: scale(0.75);

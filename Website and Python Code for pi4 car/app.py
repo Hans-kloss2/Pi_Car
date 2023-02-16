@@ -135,19 +135,6 @@ def STOP():
     gpio.output(B_R_D, backward)
     gpio.output(B_R, backward)
 
-# Driving left without rotating, hoepfully
-def STILLLEFT():
-    gpio.output(U_L_D, forward)
-    gpio.output(U_L, forward)
-
-    gpio.output(B_L_D, forward)
-    gpio.output(B_L, forward)
-
-# Driving right without rotating, hoepfully
-def STILLRIGHT():
-    gpio.output(U_L_D, forward)
-    gpio.output(U_L, forward)
-
 
 
 
