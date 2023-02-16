@@ -153,10 +153,6 @@ def index():
             RIGHT()
         elif request.form['submit_button'] == 'stop':
             STOP()
-        elif request.form['submit_button'] == '<<':
-            STILLLEFT()
-        elif request.form['submit_button'] == '>>':
-            STILLRIGHT()
     return render_template('index.html')
 
 
