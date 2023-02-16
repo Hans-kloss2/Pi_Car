@@ -156,19 +156,19 @@ def STILLLEFT():
 # Driving right without rotating, hoepfully
 def STILLRIGHT():
     gpio.output(U_L_D, backward)
-    gpio.output(U_L, backward)
+    gpio.output(U_L, forward)
 
-    # Upper Right backward
+    # Upper Right Forward
     gpio.output(U_R_D, backward)
-    gpio.output(U_R, backward)
-
-    # Bottom Left backward
+    gpio.output(U_R, forward)
+    
+    # Bottom Left Forward
     gpio.output(B_L_D, backward)
-    gpio.output(B_L, backward)
+    gpio.output(B_L, forward)
 
-    # Bottom Right backward
+    # Bottom Right Forward
     gpio.output(B_R_D, forward)
-    gpio.output(B_R, backward)
+    gpio.output(B_R, forward)
 
 
 
