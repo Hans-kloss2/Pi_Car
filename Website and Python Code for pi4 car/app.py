@@ -141,8 +141,8 @@ def STILLLEFT():
     #gpio.output(U_L, forward)
 
     # Upper Right Forward
-    gpio.output(U_R_D, backward)
-    gpio.output(U_R, backward)
+    gpio.output(U_R_D, forward)
+    gpio.output(U_R, forward)
 
     # Bottom Left Forward
     gpio.output(B_L_D, forward)
