@@ -155,7 +155,7 @@ def index():
             STOP()
     return render_template('index.html')
 
-
+#test
 
 ##############################################################
 @app.route('/left.html')
