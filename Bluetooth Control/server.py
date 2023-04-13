@@ -1,22 +1,23 @@
 import bluetooth
 
-# Define the Bluetooth server socket
-server_sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
-server_sock.bind(("", 1))
-server_sock.listen(1)
+# Define the Bluetooth UUIDs for the service and joystick characteristic
+SERVICE_UUID = "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
+JOYSTICK_UUID = "beb5483e-36e1-4688-b7f5-ea07361b26a8"
 
-# Wait for a Bluetooth client to connect
-print("Waiting for Bluetooth connection...")
-client_sock, client_info = server_sock.accept()
-print("Accepted connection from", client_info)
+# Get the MAC address of the ESP32
+esp32_address = "XX:XX:XX:XX:XX:XX"  # Replace with the MAC address of the ESP32
 
-# Loop indefinitely
-while True:
-    # Receive data from the client
-    data = client_sock.recv(1024).decode()
+# Create a Bluetooth socket and connect to the ESP32
+sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
+sock.connect((esp32_address, 1))
 
-    # Convert the data to an integer
-    sensor_data = int(data)
+# Send a command to read the joystick values
+command = bytes([0x01])
+sock.send(command)
 
-    # Do something with the sensor data
-    print("Received sensor data:", sensor_data)
+# Receive the joystick values from the ESP32
+data = sock.recv(1024)
+print(f"Joystick values: {data}")
+
+# Close the Bluetooth socket
+sock.close()
