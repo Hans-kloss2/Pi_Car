@@ -16,12 +16,9 @@ sock.connect((esp32_address, 1))
 command = bytes([0x01])
 sock.send(command)
 
-while True:
-    # Receive the joystick values from the ESP32
-    data = sock.recv(1024)
-    print(f"Joystick values: {data}")
+# Receive the joystick values from the ESP32
+data = sock.recv(1024)
+print(f"Joystick values: {data}")
 
-    # Close the Bluetooth socket
-    x = input("Press any key to exit...")
-    if (x == "q"):
-        sock.close()
+# Close the Bluetooth socket
+sock.close()
